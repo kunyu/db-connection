@@ -27,17 +27,14 @@
     },
     "suggest": {
     },
-    "replace": {
-        "hyperf/db-connection": "*"
-    },
     "autoload": {
         "psr-4": {
-            "Hyperf\\DbConnection\\": "src/"
+            "HyperfMK\\DbConnection\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "HyperfTest\\DbConnection\\": "tests/"
+            "HyperfMKTest\\DbConnection\\": "tests/"
         }
     },
     "config": {
@@ -48,7 +45,7 @@
             "dev-master": "1.1-dev"
         },
         "hyperf": {
-            "config": "Hyperf\\DbConnection\\ConfigProvider"
+            "config": "HyperfMK\\DbConnection\\ConfigProvider"
         }
     },
     "bin": [
