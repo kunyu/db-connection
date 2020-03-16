@@ -40,7 +40,7 @@ use Psr\Container\ContainerInterface;
  * @method static commit()
  * @method static int transactionLevel()
  * @method static array pretend(\Closure $callback)
- * @method static ConnectionInterface connection(string $pool)
+ * @method static ConnectionInterface connection(string $pool, bool $flag)
  */
 class Db
 {
@@ -71,9 +71,9 @@ class Db
         return $db->__connection()->{$name}(...$arguments);
     }
 
-    private function __connection($pool = 'default'): ConnectionInterface
+    private function __connection($pool = 'default', $force=false): ConnectionInterface
     {
         $resolver = $this->container->get(ConnectionResolverInterface::class);
-        return $resolver->connection($pool);
+        return $resolver->connection($pool, $force);
     }
 }

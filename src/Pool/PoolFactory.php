@@ -32,9 +32,9 @@ class PoolFactory
         $this->container = $container;
     }
 
-    public function getPool(string $name): DbPool
+    public function getPool(string $name, bool $force): DbPool
     {
-        if (isset($this->pools[$name])) {
+        if (!$force && isset($this->pools[$name])) {
             return $this->pools[$name];
         }
 
