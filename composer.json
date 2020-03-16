@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "HyperfMK\\DbConnection\\": "src/"
+            "Hyperf\\DbConnection\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "HyperfMKTest\\DbConnection\\": "tests/"
+            "HyperfTest\\DbConnection\\": "tests/"
         }
     },
     "config": {
@@ -48,7 +48,7 @@
             "dev-master": "1.1-dev"
         },
         "hyperf": {
-            "config": "HyperfMK\\DbConnection\\ConfigProvider"
+            "config": "Hyperf\\DbConnection\\ConfigProvider"
         }
     },
     "bin": [
