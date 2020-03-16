@@ -1,5 +1,5 @@
 {
-    "name": "hyperf/db-connection",
+    "name": "kunyu/db-connection",
     "description": "A hyperf db connection handler for hyperf/database.",
     "license": "MIT",
     "keywords": [
@@ -26,6 +26,9 @@
         "friendsofphp/php-cs-fixer": "^2.9"
     },
     "suggest": {
+    },
+    "replace": {
+        "hyperf/db-connection": "*"
     },
     "autoload": {
         "psr-4": {
